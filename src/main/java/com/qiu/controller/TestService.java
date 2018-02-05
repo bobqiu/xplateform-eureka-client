@@ -16,11 +16,10 @@ public class TestService {
     @Autowired
     DiscoveryClient discoveryClient;
 
-    @RequestMapping("/dc")
+    @RequestMapping("/indexs")
     public String dc() {
         String services = "Services: " + discoveryClient.getServices();
         System.out.println(services);
         return services;
     }
-
 }
